@@ -68,8 +68,8 @@ section{
 
 .btn:hover{
    border-radius: 5rem;
-   background-color: var(--sub-color);
-   color: var(--main-color);
+   background-color: black;
+   color: red;
 }
 
 .header{
