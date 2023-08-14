@@ -2,9 +2,9 @@
 
 :root{
    --main-color:#ebcf71cf;
-   --sub-color:#ffa600;
+   --sub-color:#ffc000;
    --white:#fff;
-   --border:.1rem solid rgba(220, 198, 156, .3);
+   --border:.3rem solid #ffc000;
 }
 
 *{
@@ -43,7 +43,7 @@ html{
 }
 
 body{
-   background-color: var(--main-color);
+   background-color: #fff;
 }
 
 section{
@@ -58,18 +58,18 @@ section{
    padding: 1rem 3rem;
    border: var(--border);
    font-size: 1.8rem;
-   color: var(--sub-color);
+   color: #ffc000;
    text-align: center;
    text-transform: capitalize;
    transition: .2s linear;
    margin-top: 1rem;
-   background-color: var(--main-color);
+   background-color: #fff;
 }
 
 .btn:hover{
    border-radius: 5rem;
-   background-color: black;
-   color: red;
+   background-color: var(--sub-color);
+   color: var(--white);
 }
 
 .header{
@@ -119,7 +119,7 @@ section{
 
 .header .navbar a:hover{
    background-color: var(--main-color);
-   color: var(--sub-color);
+   color: #fff;
 }
 
 .home .box img{
@@ -190,14 +190,14 @@ section{
    width: 100%;
    padding: 1rem 0;
    font-size: 1.8rem;
-   background-color: var(--main-color);
-   color: var(--white);
+   background-color: var(--white);
+   color: var(--sub-color);
    border-bottom: var(--border);
    margin: 1rem 0;
 }
 
 .availability form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
-   filter: invert(1);
+   filter: invert(100%) sepia() saturate(10000%) hue-rotate(0deg);
 }
 
 .about .row{
@@ -285,7 +285,7 @@ section{
 
 .reservation form h3{
    background-color: var(--sub-color);
-   color: var(--main-color);
+   color: var(--white);
    font-size: 2.5rem;
    margin-bottom: 2rem;
    border-radius: .5rem;
@@ -307,14 +307,14 @@ section{
    padding: 1rem 0;
    margin: 1rem 0;
    border-bottom: var(--border);
-   background: var(--main-color);
-   color: var(--white);
+   background: var(--white);
+   color: var(--sub-color);
    font-size: 1.8rem;
    width: 100%;
 }
 
 .reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
-   filter: invert(1);
+   filter: invert(100%) sepia() saturate(10000%) hue-rotate(0deg);
 }
 
 .gallery img{
@@ -361,7 +361,7 @@ section{
    margin-bottom: 1rem;
    border-radius: .5rem;
    padding: 1.2rem;
-   color: var(--main-color);
+   color: var(--white);
    background-color: var(--sub-color);
    font-size: 2.2rem;
    text-transform: capitalize;
@@ -373,7 +373,7 @@ section{
    border-bottom: var(--border);
    font-size: 1.8rem;
    color: var(--sub-color);
-   background:var(--main-color);
+   background:var(--white);
    width: 100%;
 }
 
@@ -402,7 +402,7 @@ section{
 
 .contact .row .faq .box h3{
    background-color: var(--sub-color);
-   color: var(--main-color);
+   color: var(--white);
    padding: 1.5rem;
    font-size: 2rem;
    border-radius: .5rem;
@@ -468,7 +468,7 @@ section{
 }
 
 .footer .box-container .box a:hover{
-   color: var(--white);
+   color: var(--main-color);
 }
 
 .footer .box-container .box:first-child i{
@@ -491,7 +491,7 @@ section{
    border-radius: .5rem;
    padding: 2rem;
    text-align: center;
-   color: var(--main-color);
+   color: var(--white);
    background-color: var(--sub-color);
    font-size: 2rem;
    /* margin-bottom: 8rem; */
