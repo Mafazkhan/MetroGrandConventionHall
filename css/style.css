@@ -241,6 +241,17 @@ section{
    flex-wrap: wrap;
 }
 
+.services h4{
+   background-color: var(--sub-color);
+   color: var(--white);
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   padding: 1.2rem;
+   text-align: center;
+   text-transform: capitalize;
+}
+
 .services .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -255,7 +266,7 @@ section{
 }
 
 .services .box-container .box img{
-   height: 7rem;
+   height: 17rem;
    margin-bottom: 1rem;
 }
 
