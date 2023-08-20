@@ -24,7 +24,7 @@
 
    <div class="flex">
       <a href="#home" class="logo">Metro Grand Convention Hall</a>
-      <a href="tel:9591870759" class="btn">9591870759</a>
+      <!-- <a href="tel:9591870759" class="btn">9591870759</a> -->
       <div id="menu-btn" class="fas fa-bars"></div>
    </div>
 
@@ -60,7 +60,7 @@
          <div class="box swiper-slide">
             <img src="images/banner1.jpeg" alt="">
             <div class="flex">
-               <h3>foods and drinks</h3>
+               <h3>Banquet hall</h3>
                <a href="#reservation" class="btn">make a reservation</a>
             </div>
          </div>
@@ -68,7 +68,7 @@
          <div class="box swiper-slide">
             <img src="images/banner2.jpeg" alt="">
             <div class="flex">
-               <h3>luxurious halls</h3>
+               <h3>Stunning decoration</h3>
                <a href="#contact" class="btn">contact us</a>
             </div>
          </div>
@@ -76,7 +76,7 @@
          <div class="box swiper-slide">
             <img src="images/banner3.jpeg" alt="">
             <div class="flex">
-               <h3>luxurious halls</h3>
+               <h3>Grand stage</h3>
                <a href="#contact" class="btn">contact us</a>
             </div>
          </div>
@@ -84,7 +84,7 @@
          <div class="box swiper-slide">
             <img src="images/banner4.jpeg" alt="">
             <div class="flex">
-               <h3>luxurious halls</h3>
+               <h3>flawless interior</h3>
                <a href="#contact" class="btn">contact us</a>
             </div>
          </div>
@@ -96,7 +96,6 @@
                <a href="#contact" class="btn">contact us</a>
             </div>
          </div>
-
       </div>
 
       <div class="swiper-button-next"></div>
@@ -112,48 +111,51 @@
 
 <section class="availability" id="availability">
 
-   <form action="" method="post">
+   <form action="https://formsubmit.co/5c14afef5c3c1f0181964b1da20b5682" method="POST">
       <div class="flex">
+            <input type="hidden" name="subject" value="Metro Grand Booking">
+            <input type="hidden" name="_next" value="https://worxury.com/pages/thankyou.html"> 
+            <input style="flex: 1 1 40rem;
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 2rem;" 
+            type="text" name="name" required maxlength="50" placeholder="Enter your name" class="box">
+            <input  style="flex: 1 1 40rem;
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 2rem;" 
+            type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Enter your number" class="box">
          <div class="box">
-            <p>Check in <span>*</span></p>
+            <p>Availability date<span>*</span></p>
             <input type="date" name="check_in" class="input" required>
          </div>
          <div class="box">
-            <p>Check out <span>*</span></p>
-            <input type="date" name="check_out" class="input" required>
-         </div>
-         <div class="box">
-            <p>People <span>*</span></p>
+            <p>People<span>*</span></p>
             <select name="adults" class="input" required>
-               <option value="1">100 people</option>
-               <option value="2">200 people</option>
-               <option value="3">400 people</option>
-               <option value="4">600 people</option>
-               <option value="5">1000 people</option>
-               <option value="6">1200 people</option>
+               <option value="100 people">100 people</option>
+               <option value="200 people">200 people</option>
+               <option value="400 people">400 people</option>
+               <option value="600 people">600 people</option>
+               <option value="1000 people">1000 people</option>
+               <option value="1200 people">1200 people</option>
             </select>
          </div>
          <div class="box">
             <p>Events <span>*</span></p>
             <select name="childs" class="input" required>
-               <option value="-">0 ceremonies</option>
-               <option value="1">1 ceremonies</option>
-               <option value="2">2 ceremonies</option>
-               <option value="3">3 ceremonies</option>
-               <option value="4">4 ceremonies</option>
-               <option value="5">5 ceremonies</option>
-               <option value="6">6 ceremonies</option>
+               <option value="1 event">1 event</option>
+               <option value="2 events">2 events</option>
+               <option value="3 events">3 events</option>
+               <option value="4 events">4 events</option>
+               <option value="5 events">5 events</option>
+               <option value="6 events">6 events</option>
             </select>
          </div>
          <div class="box">
-            <p>Rooms <span>*</span></p>
-            <select name="rooms" class="input" required>
-               <option value="1">1 room </option>
-               <option value="2">2 rooms</option>
-               <option value="3">3 rooms</option>
-               <option value="4">4 rooms</option>
-               <option value="5">5 rooms</option>
-               <option value="6">6 rooms</option>
+            <p>Time-Slot<span>*</span></p>
+            <select name="Time slots" class="input" required>
+               <option value="Morning">Morning</option>
+               <option value="Night">Night</option>
             </select>
          </div>
       </div>
@@ -260,49 +262,52 @@
 
 <section class="reservation" id="reservation">
 
-   <form action="" method="post">
+   <form  action="https://formsubmit.co/5c14afef5c3c1f0181964b1da20b5682" method="POST">
       <h3>make a reservation</h3>
-      <div class="flex">
+         <div class="flex">
+            <input type="hidden" name="subject" value="Metro Grand Booking">
+            <input type="hidden" name="_next" value="https://worxury.com/pages/thankyou.html"> 
+            <input style="flex: 1 1 40rem;
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 2rem;" 
+            type="text" name="name" required maxlength="50" placeholder="Enter your name" class="box">
+            <input  style="flex: 1 1 40rem;
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 2rem;" 
+            type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Enter your number" class="box">
          <div class="box">
-            <p>Check in <span>*</span></p>
-            <input type="date" name="check_in" class="input" required>
+            <p>Check date <span>*</span></p>
+            <input type="date" name="check_in" class="input">
          </div>
          <div class="box">
-            <p>Check out <span>*</span></p>
-            <input type="date" name="check_out" class="input" required>
-         </div>
-         <div class="box">
-            <p>People <span>*</span></p>
+            <p>People<span>*</span></p>
             <select name="adults" class="input" required>
-               <option value="1">1 adult</option>
-               <option value="2">2 adults</option>
-               <option value="3">3 adults</option>
-               <option value="4">4 adults</option>
-               <option value="5">5 adults</option>
-               <option value="6">6 adults</option>
+               <option value="100 people">100 people</option>
+               <option value="200 people">200 people</option>
+               <option value="400 people">400 people</option>
+               <option value="600 people">600 people</option>
+               <option value="1000 people">1000 people</option>
+               <option value="1200 people">1200 people</option>
             </select>
          </div>
          <div class="box">
             <p>Events <span>*</span></p>
             <select name="childs" class="input" required>
-               <option value="-">0 child</option>
-               <option value="1">1 child</option>
-               <option value="2">2 childs</option>
-               <option value="3">3 childs</option>
-               <option value="4">4 childs</option>
-               <option value="5">5 childs</option>
-               <option value="6">6 childs</option>
+               <option value="1 event">1 event</option>
+               <option value="2 events">2 events</option>
+               <option value="3 events">3 events</option>
+               <option value="4 events">4 events</option>
+               <option value="5 events">5 events</option>
+               <option value="6 events">6 events</option>
             </select>
          </div>
          <div class="box">
-            <p>Rooms <span>*</span></p>
-            <select name="rooms" class="input" required>
-               <option value="1">1 room</option>
-               <option value="2">2 rooms</option>
-               <option value="3">3 rooms</option>
-               <option value="4">4 rooms</option>
-               <option value="5">5 rooms</option>
-               <option value="6">6 rooms</option>
+            <p>Time-Slot<span>*</span></p>
+            <select name="Time slots" class="input" required>
+               <option value="Morning">Morning</option>
+               <option value="Night">Night</option>
             </select>
          </div>
       </div>
@@ -344,8 +349,10 @@
 
    <div class="row">
 
-      <form action="" method="post">
+      <form  action="https://formsubmit.co/5c14afef5c3c1f0181964b1da20b5682" method="POST">
          <h3>send us message</h3>
+         <input type="hidden" name="subject" value="Metro Grand Booking">
+         <input type="hidden" name="_next" value="https://worxury.com/pages/thankyou.html"> 
          <input type="text" name="name" required maxlength="50" placeholder="Enter your name" class="box">
          <input type="email" name="email" required maxlength="50" placeholder="Enter your email" class="box">
          <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Enter your number" class="box">
@@ -356,16 +363,16 @@
       <div class="faq">
          <h3 class="title">frequently asked questions</h3>
          <div class="box active">
-            <h3>How to cancel?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.</p>
+            <h3>How to reschedule?</h3>
+            <p>After booking if you want to reschedule we will do it on availability</p>
          </div>
          <div class="box">
-            <h3>Is there any vacancy?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+            <h3>Are there any offers?</h3>
+            <p>We always have a ton of offer going on just get in touch through our social media handles, website or phone number and we can discuss all the option we have.</p>
          </div>
          <div class="box">
             <h3>What are payment methods?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
+            <p>We accept all types of cash, card, UPI and cheques</p>
          </div>
          <div class="box">
             <h3>How to claim coupons codes?</h3>
@@ -428,6 +435,49 @@
 </section>
 
 <!-- reviews section ends  -->
+
+      <!-- Experimental floating action button STARTS -->
+      <div class="fabs" onclick="toggleBtn()">
+         <div class="action">
+           <i class="fa fa-phone" id="add"></i>
+           <i class="fas fa-times" id="remove" style="display: none"></i>
+         </div>
+   
+         <div class="btns">
+            <a href="tel:6360045983" class="fbtn" style="background: #ffc000;"
+             ><i class="fa fa-phone"></i></a>
+           <a href="https://wa.me/6360045983" class="fbtn" style="background: #25D366"
+             ><i class="fab fa-whatsapp"></i
+           ></a>
+         </div>
+       </div>
+       <script>
+         function toggleBtn() {
+           const Btns = document.querySelector(".btns");
+           const add = document.getElementById("add");
+           const remove = document.getElementById("remove");
+           const btn = document.querySelector(".btns").querySelectorAll("a");
+           Btns.classList.toggle("open");
+           if (Btns.classList.contains("open")) {
+             remove.style.display = "block";
+             add.style.display = "none";
+             btn.forEach((e, i) => {
+               setTimeout(() => {
+                 bottom = 40 * i;
+                 e.style.bottom = bottom + "px";
+                 console.log(e);
+               }, 100 * i);
+             });
+           } else {
+             add.style.display = "block";
+             remove.style.display = "none";
+             btn.forEach((e, i) => {
+               e.style.bottom = "0px";
+             });
+           }
+         }
+       </script>
+       <!-- experimental floating ACTION BUTTON ENDS -->
 
 <!-- footer section starts  -->
 
