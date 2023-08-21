@@ -23,7 +23,7 @@
 <section class="header">
 
    <div class="flex">
-      <a href="#home" class="logo">Metro Grand Convention Hall</a>
+      <a href="#home" class="logo"><img height="60px" width="60px" src="images/metro-logo.png" alt=""></a>
       <a href="tel:9591870759" class="btn">9591870759</a>
       <div id="menu-btn" class="fas fa-bars"></div>
    </div>
@@ -38,74 +38,96 @@
    </nav>
 
 </section>
+<br>
 
 <!-- header section ends -->
 
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-   <div class="swiper home-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="box swiper-slide">
-            <img src="images/banner.jpeg" alt="">
-            <div class="flex">
-               <h3>luxurious venue</h3>
-               <a href="#availability" class="btn">check availability</a>
-            </div>
-         </div>
-
-         <div class="box swiper-slide">
-            <img src="images/banner1.jpeg" alt="">
-            <div class="flex">
-               <h3>Banquet hall</h3>
-               <a href="#reservation" class="btn">make a reservation</a>
-            </div>
-         </div>
-
-         <div class="box swiper-slide">
-            <img src="images/banner2.jpeg" alt="">
-            <div class="flex">
-               <h3>Stunning decoration</h3>
-               <a href="#contact" class="btn">contact us</a>
-            </div>
-         </div>
-
-         <div class="box swiper-slide">
-            <img src="images/banner3.jpeg" alt="">
-            <div class="flex">
-               <h3>Grand stage</h3>
-               <a href="#contact" class="btn">contact us</a>
-            </div>
-         </div>
-
-         <div class="box swiper-slide">
-            <img src="images/banner4.jpeg" alt="">
-            <div class="flex">
-               <h3>flawless interior</h3>
-               <a href="#contact" class="btn">contact us</a>
-            </div>
-         </div>
-
-         <div class="box swiper-slide">
-            <img src="images/banner5.jpeg" alt="">
-            <div class="flex">
-               <h3>luxurious halls</h3>
-               <a href="#contact" class="btn">contact us</a>
-            </div>
-         </div>
-      </div>
-
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-
+<!-- New carousel starts -->
+<div class="img-slider">
+   <a href="#"><div class="slide active">
+     <img src="images/banner.jpeg" alt="banner">
+   </div></a>
+   <a href="#"><div class="slide">
+     <img src="images/banner1.jpeg" alt="banner 1">
+   </div></a>
+   <a href="#"><div class="slide active">
+      <img src="images/banner2.jpeg" alt="banner">
+    </div></a>
+    <a href="#"><div class="slide active">
+      <img src="images/banner3.jpeg" alt="banner">
+    </div></a>
+    <a href="#"><div class="slide active">
+      <img src="images/banner4.jpeg" alt="banner">
+    </div></a>
+    <a href="#"><div class="slide active">
+      <img src="images/banner5.jpeg" alt="banner">
+    </div></a>
+   <div class="navigation">
+     <div class="sbtn active"></div>
+     <div class="sbtn"></div>
+     <div class="sbtn"></div>
+     <div class="sbtn"></div>
+     <div class="sbtn"></div>
+     <div class="sbtn"></div>
    </div>
+ </div>
+ <script type="text/javascript">
+   var slides = document.querySelectorAll('.slide');
+   var btns = document.querySelectorAll('.sbtn');
+   let currentSlide = 1;
 
-</section>
+   // Javascript for image slider manual navigation
+   var manualNav = function(manual){
+     slides.forEach((slide) => {
+       slide.classList.remove('active');
 
-<!-- home section ends -->
+       btns.forEach((btn) => {
+         btn.classList.remove('active');
+       });
+     });
+
+     slides[manual].classList.add('active');
+     btns[manual].classList.add('active');
+   }
+
+   btns.forEach((btn, i) => {
+     btn.addEventListener("click", () => {
+       manualNav(i);
+       currentSlide = i;
+     });
+   });
+
+   // Javascript for image slider autoplay navigation
+   var repeat = function(activeClass){
+     let active = document.getElementsByClassName('active');
+     let i = 1;
+
+     var repeater = () => {
+       setTimeout(function(){
+         [...active].forEach((activeSlide) => {
+           activeSlide.classList.remove('active');
+         });
+
+       slides[i].classList.add('active');
+       btns[i].classList.add('active');
+       i++;
+
+       if(slides.length == i){
+         i = 0;
+       }
+       if(i >= slides.length){
+         return;
+       }
+       repeater();
+     }, 8000);
+     }
+     repeater();
+   }
+   repeat();
+   </script>
+
+
+  <!-- New carousel ends -->
 
 <!-- availability section starts  -->
 
@@ -360,29 +382,7 @@
          <input type="submit" value="send message" name="send" class="btn">
       </form>
 
-      <div class="faq">
-         <h3 class="title">frequently asked questions</h3>
-         <div class="box active">
-            <h3>How to reschedule?</h3>
-            <p>After booking if you want to reschedule we will do it on availability</p>
-         </div>
-         <div class="box">
-            <h3>Are there any offers?</h3>
-            <p>We always have a ton of offer going on just get in touch through our social media handles, website or phone number and we can discuss all the option we have.</p>
-         </div>
-         <div class="box">
-            <h3>What are payment methods?</h3>
-            <p>We accept all types of cash, card, UPI and cheques</p>
-         </div>
-         <div class="box">
-            <h3>How to claim coupons codes?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
-         </div>
-         <div class="box">
-            <h3>What are the age requirements?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
-         </div>
-      </div>
+   
 
    </div>
 
