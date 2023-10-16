@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <title>Metro Grand Convention Hall | Function hall in Bangalore</title>
+   <meta name="description" content="Elegant event venue: Metro Grand Convention Hall. Perfect for weddings, receptions, baby showers, & more. Spacious, modern, & customizable. Host your event today">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Metro Grand Convention Hall</title>
+   
    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -18,116 +20,108 @@
 </head>
 <body>
    
-<!-- header section starts  -->
 
-<section class="header">
+<!-- Experimental video carousel -->
 
-   <div class="flex">
-      <a href="#home" class="logo"><img height="60px" width="60px" src="images/metro-logo.png" alt=""></a>
-      <a href="tel:9591870759" class="btn">9591870759</a>
-      <div id="menu-btn" class="fas fa-bars"></div>
+<header>
+   <a href="#" class="brand">Metro Grand Convention Hall</a>
+   <div class="menu-btn"></div>
+   <div class="navigation" style="background-color: #433d3dc3;">
+     <div class="navigation-items" style="background-color: transparent;">
+       <a style="font-size: 22px;" href="#">Home</a>
+       <a style="font-size: 22px;" href="metro-grand-convention-services">Services</a>
+       <a style="font-size: 22px;" href="metro-grand-convention-services">Prices</a>
+     </div>
    </div>
+ </header>
 
-   <nav class="navbar">
-      <a href="#home">home</a>
-      <a href="#about">about</a>
-      <a href="#reservation">reservation</a>
-      <a href="#gallery">gallery</a>
-      <a href="#contact">contact</a>
-      <a href="#reviews">reviews</a>
-   </nav>
-
-</section>
-<br>
-
-<!-- header section ends -->
-
-<!-- New carousel starts -->
-<div class="img-slider">
-   <a href="#"><div class="slide active">
-     <img src="images/banner.jpeg" alt="banner">
-   </div></a>
-   <a href="#"><div class="slide">
-     <img src="images/banner1.jpeg" alt="banner 1">
-   </div></a>
-   <a href="#"><div class="slide active">
-      <img src="images/banner2.jpeg" alt="banner">
-    </div></a>
-    <a href="#"><div class="slide active">
-      <img src="images/banner3.jpeg" alt="banner">
-    </div></a>
-    <a href="#"><div class="slide active">
-      <img src="images/banner4.jpeg" alt="banner">
-    </div></a>
-    <a href="#"><div class="slide active">
-      <img src="images/banner5.jpeg" alt="banner">
-    </div></a>
-   <div class="navigation">
-     <div class="sbtn active"></div>
-     <div class="sbtn"></div>
-     <div class="sbtn"></div>
-     <div class="sbtn"></div>
-     <div class="sbtn"></div>
-     <div class="sbtn"></div>
+<section class="home">
+   <video class="video-slide active" src="images/demo.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="images/demo2.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="images/demo3.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="images/demo4.mp4" autoplay muted loop></video>
+   <video class="video-slide" src="images/demo5.mp4" autoplay muted loop></video>
+   <div class="content active">
+     <h3>Best<br><span>Venue</span></h3>
+     <p>Metro Grand Convention Hall is your ultimate venue for life's most cherished moments. From enchanting weddings to joyous birthdays and heartwarming baby showers, we offer an exquisite backdrop for your celebrations.</p>
+     <a href="#availability">Book Now</a>
    </div>
- </div>
+   <div class="content">
+     <h3>Exciting<br><span>Offers</span></h3>
+     <p>Get a special discounted rate on venue rental, cutting-edge audiovisual equipment, and customizable event packages tailored to your preferences. Whether you require catering, decor, or tech support, we've got you covered.</p>
+     <a href="#about">Book Now</a>
+   </div>
+   <div class="content">
+      <h3>Grand<br><span>Catering</span></h3>
+     <p>Metro Grand Convention Hall offers exquisite catering services that elevate your event to a culinary masterpiece. With a diverse menu to suit every palate, our expert chefs craft delectable dishes using the freshest ingredients.</p>
+     <a href="#availability">Book Now</a>
+   </div>
+   <div class="content">
+     <h3>Photos<br><span>Videos</span></h3>
+     <p>Capture the essence of your event with Metro Grand Convention Hall's photography services. Our skilled photographers have a keen eye for detail, adeptly immortalizing the magic of your special moments.</p>
+     <a href="#availability">Book Now</a>
+   </div>
+   <div class="content">
+     <h3>Delightful<br><span>Foods</span></h3>
+     <p>Indulge in a delectable array of treats at our venue, where a world of flavors awaits. Satisfy your cravings with a tempting selection that includes velvety ice creams, two delightful varieties of sweets.</p>
+     <a href="#availability">Book Now</a>
+   </div>
+   <div class="media-icons">
+     <a href="https://www.facebook.com/MetroGrandConventionHall"><i class="fab fa-facebook-f" style="background-color: transparent;"></i></a>
+     <a href="https://www.instagram.com/metrograndconventionhall/"><i class="fab fa-instagram" style="background-color: transparent;"></i></a>
+     <!-- <a href="#"><i class="fab fa-twitter" style="background-color: transparent;"></i></a> -->
+   </div>
+   <div class="slider-navigation">
+     <div class="nav-btn active"></div>
+     <div class="nav-btn"></div>
+     <div class="nav-btn"></div>
+     <div class="nav-btn"></div>
+     <div class="nav-btn"></div>
+   </div>
+ </section>
+
  <script type="text/javascript">
-   var slides = document.querySelectorAll('.slide');
-   var btns = document.querySelectorAll('.sbtn');
-   let currentSlide = 1;
+ //Javacript for responsive navigation menu
+ const menuBtn = document.querySelector(".menu-btn");
+ const navigation = document.querySelector(".navigation");
 
-   // Javascript for image slider manual navigation
-   var manualNav = function(manual){
-     slides.forEach((slide) => {
-       slide.classList.remove('active');
+ menuBtn.addEventListener("click", () => {
+   menuBtn.classList.toggle("active");
+   navigation.classList.toggle("active");
+ });
 
-       btns.forEach((btn) => {
-         btn.classList.remove('active');
-       });
-     });
+ //Javacript for video slider navigation
+ const btns = document.querySelectorAll(".nav-btn");
+ const slides = document.querySelectorAll(".video-slide");
+ const contents = document.querySelectorAll(".content");
 
-     slides[manual].classList.add('active');
-     btns[manual].classList.add('active');
-   }
-
-   btns.forEach((btn, i) => {
-     btn.addEventListener("click", () => {
-       manualNav(i);
-       currentSlide = i;
-     });
+ var sliderNav = function(manual){
+   btns.forEach((btn) => {
+     btn.classList.remove("active");
    });
 
-   // Javascript for image slider autoplay navigation
-   var repeat = function(activeClass){
-     let active = document.getElementsByClassName('active');
-     let i = 1;
+   slides.forEach((slide) => {
+     slide.classList.remove("active");
+   });
 
-     var repeater = () => {
-       setTimeout(function(){
-         [...active].forEach((activeSlide) => {
-           activeSlide.classList.remove('active');
-         });
+   contents.forEach((content) => {
+     content.classList.remove("active");
+   });
 
-       slides[i].classList.add('active');
-       btns[i].classList.add('active');
-       i++;
+   btns[manual].classList.add("active");
+   slides[manual].classList.add("active");
+   contents[manual].classList.add("active");
+ }
 
-       if(slides.length == i){
-         i = 0;
-       }
-       if(i >= slides.length){
-         return;
-       }
-       repeater();
-     }, 8000);
-     }
-     repeater();
-   }
-   repeat();
-   </script>
+ btns.forEach((btn, i) => {
+   btn.addEventListener("click", () => {
+     sliderNav(i);
+   });
+ });
+ </script>
 
 
-  <!-- New carousel ends -->
+<!-- Experimental video carousel -->
 
 <!-- availability section starts  -->
 
@@ -135,8 +129,9 @@
 
    <form action="https://formsubmit.co/5c14afef5c3c1f0181964b1da20b5682" method="POST">
       <div class="flex">
+            <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="subject" value="Metro Grand Booking">
-            <input type="hidden" name="_next" value="https://worxury.com/pages/thankyou.html"> 
+            <input type="hidden" name="_next" value="https://metrograndconvention.com/"> 
             <input style="flex: 1 1 40rem;
             border: var(--border);
             border-radius: .5rem;
@@ -151,33 +146,22 @@
             <p>Availability date<span>*</span></p>
             <input type="date" name="check_in" class="input" required>
          </div>
-         <div class="box">
-            <p>People<span>*</span></p>
-            <select name="adults" class="input" required>
-               <option value="100 people">100 people</option>
-               <option value="200 people">200 people</option>
-               <option value="400 people">400 people</option>
-               <option value="600 people">600 people</option>
-               <option value="1000 people">1000 people</option>
-               <option value="1200 people">1200 people</option>
-            </select>
-         </div>
-         <div class="box">
-            <p>Events <span>*</span></p>
-            <select name="childs" class="input" required>
-               <option value="1 event">1 event</option>
-               <option value="2 events">2 events</option>
-               <option value="3 events">3 events</option>
-               <option value="4 events">4 events</option>
-               <option value="5 events">5 events</option>
-               <option value="6 events">6 events</option>
-            </select>
-         </div>
+         <input  style="flex: 1 1 40rem;
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 2rem;" 
+            type="number" name="people" required maxlength="4" min="0" max="9999" placeholder="People count" class="box">
+            <input type="hidden" name="_next" value="https://metrograndconvention.com/pages/thankyou.html"> 
+            <input style="flex: 1 1 40rem;
+            border: var(--border);
+            border-radius: .5rem;
+            padding: 2rem;" 
+            type="text" name="eventname" required maxlength="50" placeholder="Event name ex: Wedding" class="box">
          <div class="box">
             <p>Time-Slot<span>*</span></p>
             <select name="Time slots" class="input" required>
-               <option value="Morning">Morning</option>
-               <option value="Night">Night</option>
+               <option value="Morning">Afternoon</option>
+               <option value="Night">Evening</option>
             </select>
          </div>
       </div>
@@ -194,37 +178,27 @@
 
    <div class="row">
       <div class="image">
-         <img src="images/about1.jpeg" alt="">
+         <img src="images/offer1.jpg" alt="">
       </div>
       <div class="content">
-         <h3>best venue</h3>
-         <p>Metro Grand Convention Hall is your ultimate venue for life's most cherished moments. From enchanting weddings to joyous birthdays and heartwarming baby showers, we offer an exquisite backdrop for your celebrations. Our versatile space transforms to match your vision, ensuring every detail reflects your unique style. With an experienced team at your side, planning becomes a breeze, and every event is executed flawlessly. Nestled in a prime location, our hall combines elegance and convenience. From intimate gatherings to grand affairs, create memories that will be cherished for a lifetime at Metro Grand Convention Hall.</p>
+         <h3>Offer for above 400 people</h3>
+         <p>Metro Grand Convention Hall offers exquisite food catering services that elevate your event to a culinary masterpiece. With a diverse menu to suit every palate, our expert chefs craft delectable dishes using only the freshest ingredients. Whether you're hosting a corporate conference, wedding, or gala, our catering team ensures impeccable service and presentation.
+            From appetizers to desserts, our menu boasts a wide array of options, including international cuisines, vegetarian delights, and gourmet desserts.</p>
          <a href="#reservation" class="btn">make a reservation</a>
       </div>
    </div>
 
    <div class="row revers">
       <div class="image">
-         <img src="images/about3.jpeg" alt="">
+         <img src="images/offer.jpg" alt="">
       </div>
       <div class="content">
-         <h3>delicious foods</h3>
-         <p>Indulge in a delectable array of treats at our venue, where a world of flavors awaits. Satisfy your cravings with a tempting selection that includes velvety ice creams, two delightful varieties of sweets that tantalize the taste buds, fluffy cotton candies that evoke nostalgia, and perfectly popped popcorn for that classic crunch. Quench your thirst with an assortment of refreshing drinks that complement your choices. Whether you're seeking a sweet escape or a savory delight, our diverse menu caters to every palate. Elevate your event experience with our mouthwatering offerings, turning moments into delicious memories.</p>
+         <h3>Offer for above 200 people</h3>
+         <p>We accommodate dietary restrictions and preferences to cater to all guests. Our commitment to quality extends beyond taste, as we prioritize food safety and hygiene.           
+            Experience unparalleled gastronomic delight at Metro Grand Convention Hall, where our catering services redefine the art of event dining, leaving a lasting impression on your guests.</p>
          <a href="#contact" class="btn">contact us</a>
       </div>
    </div>
-
-   <div class="row">
-      <div class="image">
-         <img src="images/metro-photo.webp" alt="">
-      </div>
-      <div class="content">
-         <h3>pixel perfect photography</h3>
-         <p>Capture the essence of your event with Metro Grand Convention Hall's photography services. Our skilled photographers have a keen eye for detail, adeptly immortalizing the magic of your special moments. Whether it's a wedding, corporate function, or any occasion, we understand the significance each instant holds. With a blend of artistry and technical expertise, we create a visual narrative that speaks volumes. From candid shots to posed elegance, our team ensures every emotion is preserved in its purest form. Trust Metro Grand Photography to encapsulate memories that will vividly transport you back to your cherished event, time and again.</p>
-         <a href="#availability" class="btn">check availability</a>
-      </div>
-   </div>
-
 </section>
 
 <!-- about section ends -->
@@ -280,91 +254,6 @@
 
 <!-- services section ends -->
 
-<!-- reservation section starts  -->
-
-<section class="reservation" id="reservation">
-
-   <form  action="https://formsubmit.co/5c14afef5c3c1f0181964b1da20b5682" method="POST">
-      <h3>make a reservation</h3>
-         <div class="flex">
-            <input type="hidden" name="subject" value="Metro Grand Booking">
-            <input type="hidden" name="_next" value="https://worxury.com/pages/thankyou.html"> 
-            <input style="flex: 1 1 40rem;
-            border: var(--border);
-            border-radius: .5rem;
-            padding: 2rem;" 
-            type="text" name="name" required maxlength="50" placeholder="Enter your name" class="box">
-            <input  style="flex: 1 1 40rem;
-            border: var(--border);
-            border-radius: .5rem;
-            padding: 2rem;" 
-            type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Enter your number" class="box">
-         <div class="box">
-            <p>Check date <span>*</span></p>
-            <input type="date" name="check_in" class="input">
-         </div>
-         <div class="box">
-            <p>People<span>*</span></p>
-            <select name="adults" class="input" required>
-               <option value="100 people">100 people</option>
-               <option value="200 people">200 people</option>
-               <option value="400 people">400 people</option>
-               <option value="600 people">600 people</option>
-               <option value="1000 people">1000 people</option>
-               <option value="1200 people">1200 people</option>
-            </select>
-         </div>
-         <div class="box">
-            <p>Events <span>*</span></p>
-            <select name="childs" class="input" required>
-               <option value="1 event">1 event</option>
-               <option value="2 events">2 events</option>
-               <option value="3 events">3 events</option>
-               <option value="4 events">4 events</option>
-               <option value="5 events">5 events</option>
-               <option value="6 events">6 events</option>
-            </select>
-         </div>
-         <div class="box">
-            <p>Time-Slot<span>*</span></p>
-            <select name="Time slots" class="input" required>
-               <option value="Morning">Morning</option>
-               <option value="Night">Night</option>
-            </select>
-         </div>
-      </div>
-      <input type="submit" value="check availability" name="check" class="btn">
-   </form>
-
-</section>
-
-<!-- reservation section ends -->
-
-<!-- gallery section starts  -->
-
-<section class="gallery" id="gallery">
-
-   <div class="swiper gallery-slider">
-      <div class="swiper-wrapper">
-         <img src="images/indoor.jpeg" class="swiper-slide" alt="">
-         <img src="images/indoor2.jpeg" class="swiper-slide" alt="">
-         <img src="images/indoor3.jpeg" class="swiper-slide" alt="">
-         <img src="images/indoor4.jpeg" class="swiper-slide" alt="">
-         <img src="images/indoor5.jpeg" class="swiper-slide" alt="">
-         <img src="images/banner.jpeg" class="swiper-slide" alt="">
-         <img src="images/banner1.jpeg" class="swiper-slide" alt="">
-         <img src="images/banner2.jpeg" class="swiper-slide" alt="">
-         <img src="images/banner3.jpeg" class="swiper-slide" alt="">
-         <img src="images/banner4.jpeg" class="swiper-slide" alt="">
-         <img src="images/banner5.jpeg" class="swiper-slide" alt="">
-      </div>
-      <div class="swiper-pagination"></div>
-   </div>
-
-</section>
-
-<!-- gallery section ends -->
-
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
@@ -373,8 +262,9 @@
 
       <form  action="https://formsubmit.co/5c14afef5c3c1f0181964b1da20b5682" method="POST">
          <h3>send us message</h3>
+         <input type="hidden" name="_captcha" value="false">
          <input type="hidden" name="subject" value="Metro Grand Booking">
-         <input type="hidden" name="_next" value="https://worxury.com/pages/thankyou.html"> 
+         <input type="hidden" name="_next" value="https://metrograndconvention.com/pages/thankyou.html"> 
          <input type="text" name="name" required maxlength="50" placeholder="Enter your name" class="box">
          <input type="email" name="email" required maxlength="50" placeholder="Enter your email" class="box">
          <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Enter your number" class="box">
@@ -389,52 +279,6 @@
 </section>
 
 <!-- contact section ends -->
-
-<!-- reviews section starts  -->
-
-<section class="reviews" id="reviews">
-
-   <div class="swiper reviews-slider">
-
-      <div class="swiper-wrapper">
-         <div class="swiper-slide box">
-            <img src="images/review1.jpeg" alt="">
-            <h3>Shaikh Mubarak</h3>
-            <p>Absolutely stunning venue! The Metro Grand Convention Hall's elegance and spacious layout provided the perfect backdrop for my engagement. The staff's professionalism and attention to detail ensured a seamless and memorable experience.</p>
-         </div>
-         <div class="swiper-slide box">
-            <img src="images/review2.jpg" alt="">
-            <h3>Raheem Pasha</h3>
-            <p>A hidden gem for events! I hosted my wedding reception here, and the Metro Grand Convention Hall exceeded all expectations. The ambiance, coupled with impeccable service and a convenient location, made it a magical evening for us and our guests.</p>
-         </div>
-         <div class="swiper-slide box">
-            <img src="images/review.jpeg" alt="">
-            <h3>Iqbal Siddiqui</h3>
-            <p>Top-notch facilities and service! From the moment we stepped in for our conference, the Metro Grand Convention Hall's staff was accommodating and helpful. The state-of-the-art technology, comfortable seating, and well-designed spaces made our event a resounding success.</p>
-         </div>
-         <div class="swiper-slide box">
-            <img src="images/review4.jpg" alt="">
-            <h3>Imran Baig</h3>
-            <p>Dream wedding venue! Metro Grand Convention Hall provided a picturesque setting for our big day. The attention they gave to every detail, from the decor to the catering, ensured that our guests had an incredible experience. Highly recommended for any special occasion!</p>
-         </div>
-         <div class="swiper-slide box">
-            <img src="images/review5.jpg" alt="">
-            <h3>Venkatesh</h3>
-            <p>Impressive event space! Our baby shower at the Metro Grand Convention Hall was a hit, thanks to the grandeur of the hall and the delectable cuisine they offered. The team's professionalism and dedication to making our event memorable were truly commendable.</p>
-         </div>
-         <div class="swiper-slide box">
-            <img src="images/reviewgirl.jpg" alt="">
-            <h3>Zainab Sultana</h3>
-            <p>Unforgettable experience! As a frequent event organizer, I can confidently say that the Metro Grand Convention Hall stands out. The layout versatility, top-tier amenities, and responsive staff make it a go-to choice for hosting events that demand excellence.</p>
-         </div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-   </div>
-
-</section>
-
-<!-- reviews section ends  -->
 
       <!-- Experimental floating action button STARTS -->
       <div class="fabs" onclick="toggleBtn()">
@@ -489,28 +333,22 @@
          <a href="tel:9591870759"><i class="fas fa-phone"></i> +91 9591870759</a>
          <a href="tel:6360054983"><i class="fas fa-phone"></i> +91 6360045983</a>
          <a href="mailto:support@metrograndconvention.com"><i class="fas fa-envelope"></i>support@metrograndconvention.com</a>
-         <a href="#"><i class="fas fa-map-marker-alt"></i> Bangalore, India - 560071</a>
+         <a href="https://g.co/kgs/N1ymCt"><i class="fas fa-map-marker-alt"></i>Jayadeva Flyover, 28th A Main Rd, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560078</a>
       </div>
 
       <div class="box">
-         <a href="#home">home</a>
-         <a href="#about">about</a>
-         <a href="#reservation">reservation</a>
-         <a href="#gallery">gallery</a>
-         <a href="#contact">contact</a>
-         <a href="#reviews">reviews</a>
+         <a href="#home">Home</a>
+         <a href="metro-grand-convention-services">Outdoor services</a>
+         <a href="metro-grand-convention-services">Pricing</a>
       </div>
 
       <div class="box">
-         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
-         <a href="#">twitter <i class="fab fa-twitter"></i></a>
-         <a href="#">instagram <i class="fab fa-instagram"></i></a>
-         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+         <a href="https://g.co/kgs/N1ymCt"><img height="150px" width="150px" src="images/metro-logo.png" alt=""></a>
       </div>
 
    </div>
 
-   <div class="credit">&copy; Copyright 2023 by Forxura | All rights reserved</div>
+   <div class="credit"><a style="background-color: transparent; text-decoration: none; color: #fff;" href="">Jayadeva Flyover, 28th A Main Rd, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560078</a></div>
 
 </section>
 

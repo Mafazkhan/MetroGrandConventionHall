@@ -1,0 +1,21 @@
+#Mod rewrite starts here
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^worxury.com [NC]
+RewriteRule ^(.*)$ http://www.metrograndconvention.com/$1 [L,R=301]
+
+#dont apply to existing directories, meaning  that if the folder exists on the server then dont change anything
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in directory with .hmtl extension
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Here we show the page that has .html extension
+
+RewriteRule ^(.*)$ $1.html [NC, L]
+
+<!-- Change the default directory -->
+
+DirectoryIndex metro-grand-convention-hall.html
